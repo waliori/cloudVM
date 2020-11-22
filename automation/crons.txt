@@ -1,0 +1,1 @@
+5 * * * * nextcloud_scan_cron.sh
