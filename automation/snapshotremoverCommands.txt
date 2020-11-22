@@ -1,0 +1,4 @@
+save sezrvice file here :/etc/systemd/system/my-app.servic
+and enable then start the service
+systemctl enable my-app.service
+systemctl start my-app.service

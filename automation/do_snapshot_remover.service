@@ -1,0 +1,14 @@
+[Unit]
+Description="DigitalOcean lkhnouna snapshot remover"
+
+[Service]
+ExecStart=/usr/bin/node index.js
+WorkingDirectory=/home/waliori/cloudVM/automation
+Restart=always
+RestartSec=10
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=DOSnpshtRemover
+
+[Install]
+WantedBy=multi-user.target
